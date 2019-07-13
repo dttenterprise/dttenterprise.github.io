@@ -1,0 +1,428 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*My Code */
+body{background-color: #9A9A9A;
+  min-width: 300px;
+}
+
+.header {
+  background-color:#f2f2f2;
+  text-align: center;
+  width:100%;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.header h1 {
+  border-bottom: solid black 1px;
+  font-size: 60px;
+  font-family: arial, sans-serif;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.header h2 {
+  background-color: #f1f1f1;
+  font-size: 40px;
+  font-family: arial, sans-serif;
+  padding-top: 10px;
+}
+
+nav {
+  background-color: rgb(116,109,109);
+  color: white;
+  font-family: arial, sans-serif;
+  width:100%
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+  padding:5px;
+}
+nav a:hover{
+  color:#ff2965;
+}
+.header img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width:300px;
+
+}
+.wrapper {
+  background-color:#dfdfdf;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width:100%;
+  max-width: 1300px;
+  margin-top:10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+.combobox{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-basis: 100%;
+}
+.container{
+  background-color:#dfdfdf;
+  font-family: arial, sans-serif;
+  display:grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(300px,auto);
+  width:100%;
+  max-width: 1300px;
+  margin-top:10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+}
+.testbox {
+  background-color: #eee;
+ justify-content: end;
+}
+.testbox h2 {
+  background-color: rgb(116,109,109);
+  color:white;
+  text-align: center;
+  padding:5px;
+}
+.testbox p {
+  font-size: 14px;
+  padding:10px;
+  line-height: 1.5;
+}
+.Namebox1, .Namebox2, .Namebox3, .Namebox4, .Namebox5, .Namebox6 {
+  padding:10px;
+  align-self: start;
+  background-color: rgb(116,109,109);
+  color:white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.Analysis{
+  grid-column: 1/5;
+  background-color: #eee;
+  grid-auto-rows: minmax(300px,auto);
+}
+
+.Analysis p{
+padding:10px;
+font-size: 14px;
+line-height: 1.5;
+}
+
+.Analysis h2 {
+  background-color: rgb(116,109,109);
+  color:white;
+  text-align: center;
+  padding:5px;
+}
+
+.container2{
+  background-color:#dfdfdf;
+  font-family: arial, sans-serif;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(300px,auto);
+  width:100%;
+  max-width: 1300px;
+  margin-top:10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.jobbox {
+  background-color: #eee;
+ justify-content: end;
+}
+.jobbox h2 {
+  background-color: rgb(116,109,109);
+  color:white;
+  text-align: center;
+  padding:5px;
+}
+.jobbox p {
+  font-size: 14px;
+  padding:10px;
+  line-height: 1.5;
+}
+
+.jobAnalysis{
+  grid-column: 1/4;
+  background-color: #eee;
+  grid-auto-rows: minmax(300px,auto);
+}
+
+.jobAnalysis p{
+padding:10px;
+font-size: 14px;
+line-height: 1.5;
+}
+
+.jobAnalysis h2 {
+  background-color: rgb(116,109,109);
+  color:white;
+  text-align: center;
+  padding:5px;
+}
+
+
+
+
+.img-pro1 {
+  background-image: url(img/Lars.jpg);
+}
+
+.img-pro2 {
+  background-image: url(img/James.jpg);
+}
+
+.img-pro3 {
+  background-image: url(img/Josh.jpg);
+}
+
+.img-pro4 {
+  background-image: url(img/Matt.jpg);
+}
+
+.img-pro5 {
+  background-image: url(img/Ashton.jpg);
+}
+
+.img-pro6  {
+  background-image: url(img/Radib.jpg);
+}
+
+.img-pro1, .img-pro2, .img-pro3, .img-pro4, .img-pro5, .img-pro6  {
+  flex-basis: 50%;
+  max-width:400px;
+  min-width: 400px;
+  height:400px;
+  margin:0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.teambox{
+  position: relative;
+  margin:0px;
+  margin-left: 0;
+  height: 400px;
+  max-width: 400px;
+  min-width: 300px;
+  flex-basis: 50%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+
+}
+
+.teambox h3 {
+  background-color: rgb(116,109,109);
+  color: white;
+  padding: 5px;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  margin:none;
+  text-align: center;
+  border-bottom: inherit;
+}
+
+.teambox p {
+  font-family: arial, sans-serif;
+  font-size:15px;
+  padding:10px;
+  max-width: inherit;
+  text-indent: 5px;
+  text-align: left;
+}
+
+.teambox a {
+  display:block;
+  font-family: arial, sans-serif;
+  min-width:100%;
+  text-decoration: none;
+  padding-top:10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align:center;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  background-color: #3d3d3d;
+  }
+  .teambox a:hover{
+    color:red;
+  }
+
+@media screen and (max-width:1100px){
+  .header img{
+    display:none;
+  }
+}
+
+@media screen and (max-width:799px) {
+
+  .wrapper {
+    flex-flow: column;
+    margin:none;
+  }
+  .combobox {
+    flex-shrink: none;
+  }
+
+  .teambox {
+    margin:0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-width: 400px;
+    padding:0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: white;
+  }
+
+
+  .img-pro1, .img-pro2, .img-pro3, .img-pro4, .img-pro5, .img-pro6  {
+  height: 400px;
+  min-width: 400px;
+  }
+
+@media screen and (max-width:400px) {
+  .wrapper {
+    margin-left: none;
+    margin-right: none;
+  }
+
+  .teambox {
+    margin:0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-width: 300px;
+    padding:0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: white;
+  }
+
+    .img-pro1, .img-pro2, .img-pro3, .img-pro4, .img-pro5, .img-pro6  {
+    height: 300px;
+    min-width: 300px;
+    }
+}
